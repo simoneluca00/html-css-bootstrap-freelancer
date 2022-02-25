@@ -16,16 +16,50 @@ nav {
 
 div.sz-nav-collapse {
     flex-grow: 0;
+    padding-right: 25px;
 }
 
 a.sz-nav-link {
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 /* SEZIONE HERO */
 section#sz-hero {
-    height: 200px;
     background-color: var(--bs-sz-teal);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+img#sz-avatar {
+    max-width: 35%;
+}
+
+section#sz-hero h1 {
+    padding: 15px 0;
+    white-space: nowrap;
+}
+
+div.sz-star {
+    padding-bottom: 15px;
+}
+
+.fa-star {
+    font-size: 1.5em;
+}
+
+div.sz-line-divisor {
+    height: 3px;
+    background-color: #fff;
+    width: 7rem;
+    margin: 0 15px;
+}
+
+div.sz-skills {
+    padding-bottom: 20px;
+}
+
+div.sz-skills span {
+    white-space: nowrap;
 }
 
 /* SEZIONE PORTFOLIO */
