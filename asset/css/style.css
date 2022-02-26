@@ -1,17 +1,40 @@
 :root {
-    --bs-dark-blue: #2c3e50;
+    --bs-sz-dark-blue: #2c3e50;
     --bs-sz-teal: #1abc9c;
+    --bs-sz-footer-blue: #3a546d;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-/* HEADER */
-nav {
-    background-color: var(--bs-dark-blue);
+hr {
+    margin: 0;
+    margin-bottom: 5px;
 }
 
+/* UTILITY */
+.sz-bg-teal {
+    background-color: var(--bs-sz-teal);
+}
+
+.sz-bg-dark {
+    background-color: var(--bs-sz-dark-blue);
+}
+
+.sz-bg-blue-footer {
+    background-color: #3a546d;
+}
+
+.sz-highlight {
+    color: #1abc9c;
+}
+
+.sz-text-small {
+    font-size: 0.9em;
+}
+
+/* HEADER */
 div.sz-nav-collapse {
     padding-right: 25px;
 }
@@ -21,10 +44,6 @@ a.sz-nav-link {
 }
 
 /* SEZIONE HERO */
-section#sz-hero {
-    background-color: var(--bs-sz-teal);
-}
-
 section#sz-hero h1 {
     padding: 15px 0;
     white-space: nowrap;
@@ -54,7 +73,10 @@ div.sz-skills span {
 }
 
 /* SEZIONE PORTFOLIO */
-section#sz-portfolio h1 {
+section#sz-portfolio h2,
+section#sz-contact h2,
+section#sz-portfolio .fa-star,
+section#sz-contact .fa-star {
     color: #2c3e50;
 }
 
@@ -63,22 +85,24 @@ section#sz-portfolio  img {
 }
 
 /* SEZIONE ABOUT */
-section#sz-about {
-    height: 170px;
-    background-color: var(--bs-sz-teal);
-}
 
 /* SEZIONE CONTACT ME */
-section#sz-contact {
-    height: 300px;
+section#sz-contact textarea,
+.sz-form-control {
+    border: none;
+}
+
+section#sz-contact button.sz-bg-teal:hover {
+    color: #fff;
+    background-color: #17a589;
+    border-color: #17a589;
 }
 
 /* FOOTER */
-footer {
-    height: 150px;
-    background-color: var(--bs-dark-blue);
+div.sz-social > div {
+    padding: 10px;
+    margin-right: 10px;
 }
-
 /* -------------------------------------
     MEDIAQUERY WIDTH < 390px
 ------------------------------------- */
@@ -89,7 +113,4 @@ footer {
         flex-grow: 1;
     }
 
-    div.sz-line-divisor {
-        width: 4rem;
-    }
 } */
