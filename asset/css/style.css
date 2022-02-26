@@ -10,12 +10,9 @@ html {
 /* HEADER */
 nav {
     background-color: var(--bs-dark-blue);
-    text-transform: uppercase;
-    font-weight: bold;
 }
 
 div.sz-nav-collapse {
-    flex-grow: 0;
     padding-right: 25px;
 }
 
@@ -26,12 +23,6 @@ a.sz-nav-link {
 /* SEZIONE HERO */
 section#sz-hero {
     background-color: var(--bs-sz-teal);
-    color: #fff;
-    text-transform: uppercase;
-}
-
-img#sz-avatar {
-    max-width: 35%;
 }
 
 section#sz-hero h1 {
@@ -49,7 +40,6 @@ div.sz-star {
 
 div.sz-line-divisor {
     height: 3px;
-    background-color: #fff;
     width: 7rem;
     margin: 0 15px;
 }
@@ -60,11 +50,16 @@ div.sz-skills {
 
 div.sz-skills span {
     white-space: nowrap;
+    font-size: 0.9em;
 }
 
 /* SEZIONE PORTFOLIO */
-section#sz-portfolio {
-    height: 350px;
+section#sz-portfolio h1 {
+    color: #2c3e50;
+}
+
+section#sz-portfolio  img {
+    max-width: 100%;
 }
 
 /* SEZIONE ABOUT */
@@ -83,3 +78,18 @@ footer {
     height: 150px;
     background-color: var(--bs-dark-blue);
 }
+
+/* -------------------------------------
+    MEDIAQUERY WIDTH < 390px
+------------------------------------- */
+/* @media screen and (max-width: 390px) {
+    div.sz-skills {
+        flex-flow: column wrap;
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    div.sz-line-divisor {
+        width: 4rem;
+    }
+} */
