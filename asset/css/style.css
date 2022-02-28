@@ -8,11 +8,6 @@ html {
     scroll-behavior: smooth;
 }
 
-hr {
-    margin: 0;
-    margin-bottom: 5px;
-}
-
 /* UTILITY */
 .sz-bg-teal {
     background-color: var(--bs-sz-teal);
@@ -35,41 +30,21 @@ hr {
 }
 
 /* HEADER */
-div.sz-nav-collapse {
-    padding-right: 25px;
-}
 
 a.sz-nav-link {
     font-size: 0.8em;
 }
 
 /* SEZIONE HERO */
-section#sz-hero h1 {
-    padding: 15px 0;
+section#sz-hero h1,
+div.sz-skills span {
     white-space: nowrap;
 }
 
-div.sz-star {
-    padding-bottom: 15px;
-}
-
-.fa-star {
-    font-size: 1.5em;
-}
-
+/* DIVISORE CON STELLA AL CENTRO */
 div.sz-line-divisor {
     height: 3px;
     width: 7rem;
-    margin: 0 15px;
-}
-
-div.sz-skills {
-    padding-bottom: 20px;
-}
-
-div.sz-skills span {
-    white-space: nowrap;
-    font-size: 0.9em;
 }
 
 /* SEZIONE PORTFOLIO */
@@ -80,37 +55,9 @@ section#sz-contact .fa-star {
     color: #2c3e50;
 }
 
-section#sz-portfolio  img {
-    max-width: 100%;
-}
-
-/* SEZIONE ABOUT */
-
 /* SEZIONE CONTACT ME */
-section#sz-contact textarea,
-.sz-form-control {
-    border: none;
-}
-
 section#sz-contact button.sz-bg-teal:hover {
     color: #fff;
-    background-color: #17a589;
-    border-color: #17a589;
+    background-color: #14967c;
+    border-color: #14967c;
 }
-
-/* FOOTER */
-div.sz-social > div {
-    padding: 10px;
-    margin-right: 10px;
-}
-/* -------------------------------------
-    MEDIAQUERY WIDTH < 390px
-------------------------------------- */
-/* @media screen and (max-width: 390px) {
-    div.sz-skills {
-        flex-flow: column wrap;
-        text-align: center;
-        flex-grow: 1;
-    }
-
-} */
